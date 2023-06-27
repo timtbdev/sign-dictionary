@@ -4,6 +4,8 @@ import { ArrowLeftIcon } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
+import {Button} from "@/components/ui/button"
+import { X } from "lucide-react";
 
 interface ModalWordHeadingProps {
   wordId: string;
@@ -38,16 +40,7 @@ const ModalWordHeading: React.FC<ModalWordHeadingProps> = ({
 
       {/* Save / Unsave button */}
       <div className="flex">
-        {saved > 0 ? (
-          <UnSaveButton id={wordId} word={wordTitle} detail={true} />
-        ) : (
-          <SaveButton
-            id={wordId}
-            word={wordTitle}
-            userId={userId}
-            detail={true}
-          />
-        )}
+        <Button variant="outline"><X className="mr-2 h-4 w-4" />Close</Button>
       </div>
     </dl>
   );

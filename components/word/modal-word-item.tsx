@@ -23,18 +23,7 @@ const ModalWordItem: React.FC<ModalWordItemProps> = ({
   return (
     <>
       <div className="bg-white rounded-md border border-black/5 shadow-sm flex flex-row">
-        {/* Heading */}
-        <ModalWordHeading
-          wordId={word.id}
-          categoryTitle={word.categories.title}
-          categoryId={word.categories.id}
-          wordTitle={word.title}
-          saved={saved}
-          userId={userId}
-        />
-
         {/* Body */}
-
         <div className="flex">
           {word.video ? (
             <div className="rounded-md mx-auto mt-5">
@@ -56,6 +45,15 @@ const ModalWordItem: React.FC<ModalWordItemProps> = ({
             </div>
           )}
         </div>
+        {/* Heading */}
+        <ModalWordHeading
+          wordId={word.id}
+          categoryTitle={word.categories.title}
+          categoryId={word.categories.id}
+          wordTitle={word.title}
+          saved={saved}
+          userId={userId}
+        />
       </div>
     </>
   );
