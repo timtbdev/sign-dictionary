@@ -142,13 +142,6 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({ children }: RootLayoutProps) {
-  const {
-    data: { session },
-  } = await supabase.auth.getSession();
-
-  const profileImageUrl =
-    session?.user?.user_metadata.picture ||
-    session?.user?.user_metadata.avatar_url;
   return (
     <html lang="en" className="layout" suppressHydrationWarning>
       <body
@@ -156,10 +149,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         style={{ WebkitTapHighlightColor: "transparent" }}
       >
         <Wrapper>
-          <Header
-            session={session || undefined}
-            profileImageUrl={profileImageUrl}
-          />
+          <Header />
           <Container>
             <Grid>
               <Main>{children}</Main>
