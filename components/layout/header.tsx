@@ -1,14 +1,17 @@
 import { ProfileButton, SignInButton } from "@/components/login";
 import { Logo } from "@/components/shared/icons";
-import { Session } from "@supabase/supabase-js";
+import supabase from "@/utils/supabase-server";
 import React from "react";
 
-interface HeaderProps {
-  session?: Session;
-  profileImageUrl?: string;
-}
+const Header = async () => {
+  const {
+    data: { session },
+  } = await supabase.auth.getSession();
 
-const Header: React.FC<HeaderProps> = async ({ session, profileImageUrl }) => {
+  const profileImageUrl =
+    session?.user?.user_metadata.picture ||
+    session?.user?.user_metadata.avatar_url;
+
   return (
     <>
       <div className="sticky top-0 mx-auto flex w-full justify-center border-b backdrop-blur-xl border-black/5 shadow-sm z-30">
