@@ -142,6 +142,13 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({ children }: RootLayoutProps) {
+  const {
+    data: { session },
+  } = await supabase.auth.getSession();
+
+  const profileImageUrl =
+    session?.user?.user_metadata.picture ||
+    session?.user?.user_metadata.avatar_url;
   return (
     <html lang="en" className="layout" suppressHydrationWarning>
       <body

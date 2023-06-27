@@ -16,7 +16,7 @@ import { shimmer, toBase64 } from "@/lib/utils";
 import { supabase } from "@/utils/supabase-client";
 import { UserCircleIcon } from "lucide-react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import React from "react";
 
 const SignInButton = () => {
@@ -27,6 +27,7 @@ const SignInButton = () => {
   const [signInGithubClicked, setSignInGithubClicked] =
     React.useState<boolean>(false);
   const router = useRouter();
+  const currenPath = usePathname();
 
   async function signInWithGoogle() {
     setSignInGoogleClicked(true);
@@ -37,6 +38,7 @@ const SignInButton = () => {
       },
     });
     router.refresh();
+    router.push(currenPath);
   }
 
   async function signInWithGitHub() {

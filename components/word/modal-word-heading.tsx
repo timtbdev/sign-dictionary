@@ -1,11 +1,9 @@
-import SaveButton from "@/components/shared/save-button";
-import UnSaveButton from "@/components/shared/unsave-button";
-import { ArrowLeftIcon } from "lucide-react";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
-import React from "react";
-import {Button} from "@/components/ui/button"
+"use client";
+
+import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
+import { useRouter } from "next/navigation";
+import React, { useCallback } from "react";
 
 interface ModalWordHeadingProps {
   wordId: string;
@@ -26,6 +24,10 @@ const ModalWordHeading: React.FC<ModalWordHeadingProps> = ({
 }) => {
   const router = useRouter();
 
+  const onDismiss = useCallback(() => {
+    router.back();
+  }, [router]);
+
   return (
     <dl className="flex flex-col items-center">
       {/* Word */}
@@ -40,7 +42,10 @@ const ModalWordHeading: React.FC<ModalWordHeadingProps> = ({
 
       {/* Save / Unsave button */}
       <div className="flex">
-        <Button variant="outline"><X className="mr-2 h-4 w-4" />Close</Button>
+        <Button variant="outline" onClick={() => onDismiss()}>
+          <X className="mr-2 h-4 w-4" />
+          Close
+        </Button>
       </div>
     </dl>
   );

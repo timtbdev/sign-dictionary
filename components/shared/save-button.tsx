@@ -14,8 +14,8 @@ import { cn } from "@/lib/utils";
 import { HeartIcon } from "@heroicons/react/24/outline";
 import {
   MoreVertical as ElipsisIcon,
+  SaveIcon,
   Loader2 as SpinnerIcon,
-  Trash as TrashIcon,
 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { FC, useState } from "react";
@@ -93,7 +93,7 @@ const SaveButton: FC<SaveButtonProps> = ({
         <AlertDialogContent className="font-sans bg-white">
           <AlertDialogHeader>
             <AlertDialogTitle>Save this word?</AlertDialogTitle>
-            <AlertDialogDescription>Word: {word}</AlertDialogDescription>
+            <AlertDialogDescription>{word}</AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
             <AlertDialogCancel>Cancel</AlertDialogCancel>
@@ -115,7 +115,7 @@ const SaveButton: FC<SaveButtonProps> = ({
               {isSaveLoading ? (
                 <SpinnerIcon className="mr-2 h-4 w-4 animate-spin" />
               ) : (
-                <TrashIcon className="mr-2 h-4 w-4" />
+                <SaveIcon className="mr-2 h-4 w-4" />
               )}
               <span>Save</span>
             </AlertDialogAction>
