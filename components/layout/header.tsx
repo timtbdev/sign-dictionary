@@ -1,7 +1,7 @@
 import { ProfileButton, SignInButton } from "@/components/login";
 import { Logo } from "@/components/shared/icons";
-import supabase from "@/utils/supabase-server";
-import React from "react";
+import {supabase} from "@/utils/supabase-client";
+import React, {useEffect}from "react";
 
 const Header = async () => {
   const {
