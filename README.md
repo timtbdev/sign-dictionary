@@ -1,34 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<a href="https://signapp.net">
+<img width="1281" alt="Mongolian sign language dictionary" src="https://github.com/timtbdev/Portfolio/assets/25026241/8e1b33e1-4243-474f-8b36-8d82ffbc5f87">
+</a>
+<a href="https://signapp.net">
+<img width="1004" alt="Mongolian sign language dictionary" src="https://github.com/timtbdev/Portfolio/assets/25026241/bd67e355-2d75-4752-bbd3-9fcba3d5e3ca">
+</a>
+  <h1 align="center">Mongolian Sign Language Dictionary</h1>
+</a>
 
-## Getting Started
+<p align="center">
+  Start learning Mongolian Sign Language today.
+</p>
 
-First, run the development server:
+<br/>
+
+## Introduction
+
+An open source sign language dictionary app build with Next.js 13 and Supabase, TailwindCSS, Shadcn-UI.
+
+You can clone & create this repo locally with the following command:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+npx create-next-app precedent --example "https://github.com/timtbdev/sign-dictionary"
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack + Features - [Demo](https://signapp.net)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+https://user-images.githubusercontent.com/28986134/212368288-12f41e37-aa8c-4e0a-a542-cf6d23410a65.mp4
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Frameworks
 
-## Learn More
+- [Next.js](https://nextjs.org/) – React framework for building performant apps with the best developer experience
+- [Supabase](https://supabase.co/) – Supabase is an open source Firebase alternative..
 
-To learn more about Next.js, take a look at the following resources:
+### Platforms
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Vercel](https://vercel.com/) – Easily preview & deploy changes with git
+- [Supabase Database](https://supabase.com/database) – Dedicated PostgreSQL database
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### UI
 
-## Deploy on Vercel
+- [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework for rapid UI development
+- [Tailwind UI](https://tailwindui.com/) – Beautifully designed, expertly crafted components
+- [Shadcn UI](https://ui.shadcn.com/) – Beautifully designed components
+- [Headless UI](https://headlessui.com) - Completely unstyled, fully accessible UI components
+- [Framer Motion](https://framer.com/motion) – Motion library for React to animate components with ease
+- [React Hot Toast](https://react-hot-toast.com/) - Smokint hot React Notification
+- [Lucide](https://lucide.dev/) – Beautifully simple, pixel-perfect icons
+- [Heroicons](https://heroicons.com/) - Beautiful hand-crafted SVG icons
+- [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) – Optimize custom fonts and remove external network requests for improved performance
+- [`ImageResponse`](https://beta.nextjs.org/docs/api-reference/image-response) – Generate dynamic Open Graph images at the edge
+- [`react-wrap-balancer`](https://github.com/shuding/react-wrap-balancer) – Simple React component that makes titles more readable
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Utilities
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [React Hook Form](https://react-hook-form.com/) –  Performant, flexible and extensible forms with easy-to-use validation.
+- [Zod](https://zod.dev) - TypeScript-first schema validation with static type inference
+
+### Code Quality
+
+- [TypeScript](https://www.typescriptlang.org/) – Static type checker for end-to-end typesafety
+- [Prettier](https://prettier.io/) – Opinionated code formatter for consistent code style
+- [ESLint](https://eslint.org/) – Pluggable linter for Next.js and TypeScript
+
+### Miscellaneous
+
+- [Vercel Analytics](https://vercel.com/analytics) – Track unique visitors, pageviews, and more in a privacy-friendly way
+
+## Author
+
+- Tim ([@timtbdev](https://twitter.com/timtbdev))
