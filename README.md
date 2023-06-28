@@ -1,17 +1,14 @@
+</a>
+  <h1 align="center">Mongolian Sign Language Dictionary</h1>
+</a>
+<p align="center">
+  Start learning Mongolian Sign Language today.
+</p>
 <a href="https://signapp.net">
 <img width="1281" alt="Mongolian sign language dictionary" src="https://github.com/timtbdev/Portfolio/assets/25026241/8e1b33e1-4243-474f-8b36-8d82ffbc5f87">
 </a>
 <a href="https://signapp.net">
 <img width="1004" alt="Mongolian sign language dictionary" src="https://github.com/timtbdev/Portfolio/assets/25026241/bd67e355-2d75-4752-bbd3-9fcba3d5e3ca">
-</a>
-  <h1 align="center">Mongolian Sign Language Dictionary</h1>
-</a>
-
-<p align="center">
-  Start learning Mongolian Sign Language today.
-</p>
-
-<br/>
 
 ## Introduction
 
@@ -30,7 +27,7 @@ https://user-images.githubusercontent.com/28986134/212368288-12f41e37-aa8c-4e0a-
 ### Frameworks
 
 - [Next.js](https://nextjs.org/) – React framework for building performant apps with the best developer experience
-- [Supabase](https://supabase.co/) – Supabase is an open source Firebase alternative..
+- [Supabase](https://supabase.co/) – Supabase is an open source Firebase alternative
 
 ### Platforms
 
