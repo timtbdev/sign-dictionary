@@ -39,13 +39,13 @@ https://user-images.githubusercontent.com/28986134/212368288-12f41e37-aa8c-4e0a-
 - [Lucide](https://lucide.dev/) – Beautifully simple, pixel-perfect icons
 - [Heroicons](https://heroicons.com/) - Beautiful hand-crafted SVG icons
 - [`react-hot-toast`](https://react-hot-toast.com/) - React Notifications
-- [`Parallel Routes](https://nextjs.org/docs/app/building-your-application/routing/parallel-routes) - Simultaneously or conditionally render one or more pages in the same layout
+- [`Parallel Routes`](https://nextjs.org/docs/app/building-your-application/routing/parallel-routes) - Simultaneously or conditionally render one or more pages in the same layout
 - [`Intercepting Routes`](https://nextjs.org/docs/app/building-your-application/routing/intercepting-routes) - Load a route within the current layout while keeping the context for the current page
 - [`Middleware`](https://nextjs.org/docs/app/building-your-application/routing/middleware) - Run code before a request is completed
 - [`Dynamic Routes`](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes) - Create routes from dynamic data
 - [`MetaData`](https://nextjs.org/docs/app/building-your-application/optimizing/metadata) - Improved SEO and web shareability
 - [`generateMetadata`](https://nextjs.org/docs/app/api-reference/functions/generate-metadata#generatemetadata-function) - Dynamic metadata
-- [Image Optimization](https://nextjs.org/docs/app/building-your-application/optimizing/images) - Automatically serve correctly sized images for each device
+- [`Image Optimization`](https://nextjs.org/docs/app/building-your-application/optimizing/images) - Automatically serve correctly sized images for each device
 - [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) – Optimize custom fonts and remove external network requests for improved performance
 - [`ImageResponse`](https://beta.nextjs.org/docs/api-reference/image-response) – Generate dynamic Open Graph images at the edge
 - [`react-wrap-balancer`](https://github.com/shuding/react-wrap-balancer) – Simple React component that makes titles more readable
