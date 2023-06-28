@@ -17,7 +17,7 @@ import { supabase } from "@/utils/supabase-client";
 import { UserCircleIcon } from "lucide-react";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
-import React from "react";
+import React, { useEffect } from "react";
 
 const SignInButton = () => {
   const [signInGoogleClicked, setSignInGoogleClicked] =
@@ -27,7 +27,18 @@ const SignInButton = () => {
   const [signInGithubClicked, setSignInGithubClicked] =
     React.useState<boolean>(false);
   const router = useRouter();
-  const currenPath = usePathname();
+
+  useEffect(() => {
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((event, session) => {
+      router.refresh();
+    });
+
+    return () => {
+      subscription.unsubscribe();
+    };
+  }, [supabase, router]);
 
   async function signInWithGoogle() {
     setSignInGoogleClicked(true);
@@ -38,7 +49,6 @@ const SignInButton = () => {
       },
     });
     router.refresh();
-    router.push(currenPath);
   }
 
   async function signInWithGitHub() {
