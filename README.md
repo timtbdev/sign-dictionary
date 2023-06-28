@@ -5,7 +5,7 @@
   Start learning Mongolian Sign Language today.
 </p>
 <p align="center">
-- <a href="https/signapp.net">Demo</a> 
+- <a href="https/signapp.net"><h2>Demo</h2></a> 
 </p>
 <a href="https://signapp.net">
 <img width="1281" alt="Mongolian sign language dictionary" src="https://github.com/timtbdev/Portfolio/assets/25026241/8e1b33e1-4243-474f-8b36-8d82ffbc5f87">
