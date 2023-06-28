@@ -14,12 +14,6 @@
 
 An open source sign language dictionary app build with Next.js 13 and Supabase, TailwindCSS, Shadcn-UI.
 
-You can clone & create this repo locally with the following command:
-
-```bash
-npx create-next-app precedent --example "https://github.com/timtbdev/sign-dictionary"
-```
-
 ## Tech Stack + Features
 
 https://user-images.githubusercontent.com/28986134/212368288-12f41e37-aa8c-4e0a-a542-cf6d23410a65.mp4
@@ -62,6 +56,27 @@ https://user-images.githubusercontent.com/28986134/212368288-12f41e37-aa8c-4e0a-
 ### Miscellaneous
 
 - [Vercel Analytics](https://vercel.com/analytics) – Track unique visitors, pageviews, and more in a privacy-friendly way
+
+
+## Running Locally
+
+1. Install dependencies using pnpm:
+
+```sh
+pnpm install
+```
+
+2. Copy `.env.example` to `.env.local` and update the variables.
+
+```sh
+cp .env.example .env.local
+```
+
+3. Start the development server:
+
+```sh
+pnpm dev
+```
 
 ## Author
 
