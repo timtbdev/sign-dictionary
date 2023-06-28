@@ -27,7 +27,7 @@ https://user-images.githubusercontent.com/28986134/212368288-12f41e37-aa8c-4e0a-
 ### Frameworks
 
 - [Next.js](https://nextjs.org/) – React framework for building performant apps with the best developer experience
-- [Supabase](https://supabase.co/) – Supabase is an open source Firebase alternative
+- [Supabase Auth](https://supabase.co/auth) – User Management system that works without any additional tools
 
 ### Platforms
 
