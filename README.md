@@ -14,10 +14,11 @@
 
 An open source sign language dictionary app build with Next.js 13 and Supabase, TailwindCSS, Shadcn-UI.
 
-## Tech Stack + Features
+## Demo
 
 https://user-images.githubusercontent.com/28986134/212368288-12f41e37-aa8c-4e0a-a542-cf6d23410a65.mp4
 
+## Tech Stack + Features
 ### Frameworks
 
 - [Next.js](https://nextjs.org/) – React framework for building performant apps with the best developer experience
