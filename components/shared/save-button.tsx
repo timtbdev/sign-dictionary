@@ -58,7 +58,7 @@ const SaveButton: FC<SaveButtonProps> = ({
     <>
       <button
         onClick={() =>
-          userId ? setShowSaveAlert(true) : toast.error("Please sign in!")
+          userId ? setShowSaveAlert(true) : toast.error("Please sign in to save this word!")
         }
         className={cn(
           "relative inline-flex items-center text-sm border",

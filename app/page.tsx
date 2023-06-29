@@ -1,6 +1,6 @@
 import { CategoryItem, CategoryWrapper } from "@/components/category";
 import Heading from "@/components/layout/heading";
-import SearchButton from "@/components/search/search-button";
+import {CommandMenu} from "@/components/search/command-menu";
 import { CategoryWithWords } from "@/types/collection";
 import supabase from "@/utils/supabase-server";
 
@@ -19,7 +19,7 @@ export default async function HomePage() {
       <div className="mx-auto py-12 max-w-md sm:max-w-3xl">
         <div>
           <Heading />
-          <SearchButton />
+          <CommandMenu categories={categories || undefined}/>
         </div>
         <CategoryWrapper>
           {categories?.map((category) => (

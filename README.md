@@ -39,8 +39,6 @@ https://user-images.githubusercontent.com/28986134/212368288-12f41e37-aa8c-4e0a-
 - [Lucide](https://lucide.dev/) – Beautifully simple, pixel-perfect icons
 - [Heroicons](https://heroicons.com/) - Beautiful hand-crafted SVG icons
 - [`react-hot-toast`](https://react-hot-toast.com/) - React Notifications
-- [`Parallel Routes`](https://nextjs.org/docs/app/building-your-application/routing/parallel-routes) - Simultaneously or conditionally render one or more pages in the same layout
-- [`Intercepting Routes`](https://nextjs.org/docs/app/building-your-application/routing/intercepting-routes) - Load a route within the current layout while keeping the context for the current page
 - [`Middleware`](https://nextjs.org/docs/app/building-your-application/routing/middleware) - Run code before a request is completed
 - [`Dynamic Routes`](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes) - Create routes from dynamic data
 - [`MetaData`](https://nextjs.org/docs/app/building-your-application/optimizing/metadata) - Improved SEO and web shareability

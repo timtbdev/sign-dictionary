@@ -1,3 +1,5 @@
+"use client";
+
 import SaveButton from "@/components/shared/save-button";
 import UnSaveButton from "@/components/shared/unsave-button";
 import { ArrowLeftIcon } from "lucide-react";
@@ -28,17 +30,16 @@ const WordHeading: React.FC<WordHeadingProps> = ({
     <dl className="mx-auto max-w-4xl grid grid-cols-1 gap-px sm:grid-cols-1 lg:grid-cols-3">
       {/* Back button */}
       <div className="flex flex-wrap items-baseline justify-between gap-x-4 bg-white px-4 py-2 md:py-4 lg:py-6 sm:px-6 xl:px-8">
-        <dt className="text-sm font-medium leading-6 text-gray-500">
-          Go back to Category Page
-        </dt>
-        <Link
-          href={`/categories/${categoryId}`}
+        <dt className="text-sm font-medium leading-6 text-gray-500">Go back</dt>
+        <button
+          type="button"
+          onClick={() => router.back()}
           className="w-full hover:text-gray-500 bg-transparent flex text-3xl items-center font-medium leading-10 tracking-tight text-gray-900"
         >
           <ArrowLeftIcon className="h-5 w-5 inline-flex" />
 
           <span className="ml-4 inline-flex">Back</span>
-        </Link>
+        </button>
       </div>
 
       {/* Word */}

@@ -52,7 +52,7 @@ const ProfileButton: FC<ProfileButtonProps> = async ({
           </DropdownMenuLabel>
           <DropdownMenuSeparator />
 
-          <DropdownMenuItem>
+          <DropdownMenuItem onClick={() => router.push("/saved")}>
             <ShoppingBag className="mr-2 h-4 w-4" />
             <span>Saved</span>
           </DropdownMenuItem>

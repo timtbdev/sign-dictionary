@@ -11,6 +11,10 @@ export interface WordWithCategory extends Omit<WordType, "categories"> {
 }
 
 export type SavedWordType = Database["public"]["Tables"]["saved"]["Row"];
-export interface WordWithSavedWrods extends Omit<WordType, "saved_words"> {
+export interface WordWithSavedWords extends Omit<WordType, "saved_words"> {
   saved_words: SavedWordType[];
+}
+
+export interface SavedWordCategory extends Omit<SavedWordType, "words"> {
+  words: WordWithCategory;
 }

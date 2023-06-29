@@ -54,7 +54,10 @@ export async function POST(req: Request, context: z.infer<typeof wordSchema>) {
     // Save the word.
     const { data, error } = await supabase
       .from("saved")
-      .upsert({ id: params.wordId, user_id: session.user.id })
+      .upsert({
+        id: params.wordId,
+        user_id: session.user.id,
+      })
       .select();
 
     if (error) {
