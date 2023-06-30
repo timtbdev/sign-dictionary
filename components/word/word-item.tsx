@@ -5,8 +5,10 @@ import { WordWithCategory } from "@/types/collection";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React, { FC } from "react";
-import ReactPlayer from "react-player";
 import WordHeading from "./word-heading";
+import dynamic from 'next/dynamic';
+
+const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false });
 
 interface WordItemProps {
   word: WordWithCategory;
@@ -31,11 +33,19 @@ const WordItem: React.FC<WordItemProps> = ({ word, saved, userId }) => {
 
       {/* Body */}
 
-      <div className="flex">
+      <div className="flex mx-10">
         {word.video ? (
-          <div className="rounded-md mx-auto mt-5 h-[450px] w-[400px]">
-            <ReactPlayer width="100%" height="100%" url={word.video} controls={true} />
+
+          <div className="mx-auto items-center">
+                      <div className="hidden rounded-md mx-auto sm:block">
+            <ReactPlayer height="550px" width="450px" url={word.video} controls={true} />
           </div>
+          <div className="block rounded-md mx-auto sm:hidden">
+            <ReactPlayer height="100%" width="100%" url={word.video} controls={true} />
+          </div>
+          </div>
+
+          
         ) : (
           <div className="mx-auto">
             <Image
