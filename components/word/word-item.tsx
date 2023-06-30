@@ -33,8 +33,8 @@ const WordItem: React.FC<WordItemProps> = ({ word, saved, userId }) => {
 
       <div className="flex">
         {word.video ? (
-          <div className="rounded-md mx-auto mt-5">
-            <ReactPlayer width="90%" height="100%" url={word.video} controls={true} />
+          <div className="rounded-md mx-auto mt-5 h-[450px] w-[400px]">
+            <ReactPlayer width="100%" height="100%" url={word.video} controls={true} />
           </div>
         ) : (
           <div className="mx-auto">
@@ -42,11 +42,11 @@ const WordItem: React.FC<WordItemProps> = ({ word, saved, userId }) => {
               src={word.image}
               alt={word.title}
               className="object-cover rounded-md mt-5"
-              height={400}
+              height={450}
               width={400}
               placeholder="blur"
               blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                shimmer(400, 400)
+                shimmer(450, 400)
               )}`}
             />
           </div>
