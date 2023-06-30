@@ -34,7 +34,7 @@ const WordItem: React.FC<WordItemProps> = ({ word, saved, userId }) => {
       <div className="flex">
         {word.video ? (
           <div className="rounded-md mx-auto mt-5">
-            <ReactPlayer url={word.video} controls={true} />
+            <ReactPlayer width="90%" height="100%" url={word.video} controls={true} />
           </div>
         ) : (
           <div className="mx-auto">

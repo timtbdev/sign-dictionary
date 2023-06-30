@@ -160,7 +160,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                   <h3 className="mt-6 text-xl font-semibold text-gray-900">
                     {word.title}
                   </h3>
-                  <dl className="mt-1 flex flex-grow flex-col justify-between">
+                  <dl className="mt-1 flex justify-center">
                     <dd className="mt-3 flex flex-col">
                       <span
                         className={cn(
