@@ -31,10 +31,10 @@ const WordHeading: React.FC<WordHeadingProps> = ({
   const router = useRouter();
 
   return (
-    <dl className="mx-auto max-w-4xl grid grid-cols-1 gap-px sm:grid-cols-1 lg:grid-cols-3">
+    <dl className="mx-auto max-w-4xl grid grid-cols-3 gap-px mb-8 md:mb-2">
       {/* Back button */}
-      <div className="flex flex-wrap items-baseline justify-between gap-x-4 bg-white px-4 py-2 md:py-4 lg:py-6 sm:px-6 xl:px-8">
-        <dt className="text-sm font-medium leading-6 text-gray-500">Go back</dt>
+      <div className="flex flex-wrap items-center md:item-baseline justify-between gap-x-4 bg-white px-4 py-2 md:py-4 lg:py-6 sm:px-6 xl:px-8">
+        <dt className="hidden text-sm font-medium leading-6 text-gray-500 md:block">Go back</dt>
         <button
           type="button"
           onClick={() => router.back()}
@@ -48,7 +48,7 @@ const WordHeading: React.FC<WordHeadingProps> = ({
 
       {/* Word */}
       <div className="flex flex-row justify-center items-center gap-x-4 bg-white px-4 py-2 md:py-4 lg:py-6 sm:px-6 xl:px-8">
-        <div className="flex flex-wrap items-center">
+        <div className="hidden md:flex-wrap items-center md:flex">
           <Image
             src={wordImageUrl}
             alt={wordTitle}
@@ -62,7 +62,7 @@ const WordHeading: React.FC<WordHeadingProps> = ({
             )}`}
           />
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center text-center md:text-left">
           <dt className="text-sm w-full font-medium leading-6 text-gray-500">
             {categoryTitle}
           </dt>
