@@ -11,7 +11,7 @@ import WordHeading from "./word-heading";
 interface WordItemProps {
   word: WordWithCategory;
   saved: number;
-  userId?: string
+  userId?: string;
 }
 
 const WordItem: React.FC<WordItemProps> = ({ word, saved, userId }) => {
@@ -24,6 +24,7 @@ const WordItem: React.FC<WordItemProps> = ({ word, saved, userId }) => {
         categoryTitle={word.categories.title}
         categoryId={word.categories.id}
         wordTitle={word.title}
+        wordImageUrl={word.image}
         saved={saved}
         userId={userId}
       />

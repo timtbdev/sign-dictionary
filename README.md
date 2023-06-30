@@ -16,9 +16,13 @@ An open source sign language dictionary app build with Next.js 13 and Supabase, 
 
 ## Demo
 
-https://user-images.githubusercontent.com/28986134/212368288-12f41e37-aa8c-4e0a-a542-cf6d23410a65.mp4
+https://github.com/timtbdev/sign-dictionary/assets/25026241/94ad6311-e0b0-453b-971f-ad4e88130c27
 
-## Tech Stack + Features
+## Google Lighthouse performance statistics
+
+<img width="987" alt="Screenshot 2023-06-29 at 10 02 39 PM" src="https://github.com/timtbdev/sign-dictionary/assets/25026241/6f30f98d-83b6-4bf4-a557-49edb98a8373">
+
+## Tech Stack
 ### Frameworks
 
 - [Next.js](https://nextjs.org/) – React framework for building performant apps with the best developer experience

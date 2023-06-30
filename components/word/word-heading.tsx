@@ -2,7 +2,9 @@
 
 import SaveButton from "@/components/shared/save-button";
 import UnSaveButton from "@/components/shared/unsave-button";
+import { shimmer, toBase64 } from "@/lib/utils";
 import { ArrowLeftIcon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
@@ -12,6 +14,7 @@ interface WordHeadingProps {
   categoryTitle: string;
   categoryId: string;
   wordTitle: string;
+  wordImageUrl: string;
   saved: number;
   userId?: string;
 }
@@ -21,6 +24,7 @@ const WordHeading: React.FC<WordHeadingProps> = ({
   categoryTitle,
   categoryId,
   wordTitle,
+  wordImageUrl,
   saved,
   userId,
 }) => {
@@ -43,13 +47,29 @@ const WordHeading: React.FC<WordHeadingProps> = ({
       </div>
 
       {/* Word */}
-      <div className="flex flex-wrap justify-between items-baseline text-center gap-x-4 bg-white px-4 py-2 md:py-4 lg:py-6 sm:px-6 xl:px-8">
-        <dt className="text-sm w-full text-center font-medium leading-6 text-gray-500">
-          {categoryTitle}
-        </dt>
-        <dd className="w-full flex-none text-3xl font-medium leading-10 tracking-tight text-gray-900">
-          {wordTitle}
-        </dd>
+      <div className="flex flex-row justify-center items-center gap-x-4 bg-white px-4 py-2 md:py-4 lg:py-6 sm:px-6 xl:px-8">
+        <div className="flex flex-wrap items-center">
+          <Image
+            src={wordImageUrl}
+            alt={wordTitle}
+            className="h-16 w-16 rounded-full object-cover shadow-md ring-1 ring-gray-200"
+            width={64}
+            height={64}
+            priority
+            placeholder="blur"
+            blurDataURL={`data:image/svg+xml;base64,${toBase64(
+              shimmer(64, 64)
+            )}`}
+          />
+        </div>
+        <div className="flex flex-col items-center">
+          <dt className="text-sm w-full font-medium leading-6 text-gray-500">
+            {categoryTitle}
+          </dt>
+          <dd className="w-full flex-none text-3xl font-medium leading-10 tracking-tight text-gray-900">
+            {wordTitle}
+          </dd>
+        </div>
       </div>
 
       {/* Save / Unsave button */}

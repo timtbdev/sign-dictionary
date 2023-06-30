@@ -45,7 +45,7 @@ export function CommandMenu({ categories }: CommandMenuProps) {
 
   return (
     <>
-      <div className="max-w-md mx-auto mt-6 sm:flex sm:items-center">
+      <div className="max-w-md mx-8 md:mx-auto mt-6 sm:flex sm:items-center">
         <Button
           variant="outline"
           className={cn(

@@ -135,7 +135,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         {words?.length && words?.length > 0 ? (
           <ul
             role="list"
-            className="grid grid-cols-2 py-12 gap-6 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4"
+            className="grid grid-cols-1 py-12 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
           >
             {words?.map((word) => (
               <div
